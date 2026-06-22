@@ -1,0 +1,115 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #fdfbf7; /* Warm, soft cream background */
+    color: #4a3b32; /* Deep coffee brown text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+/* Profile Header */
+.profile .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6f4e37; /* Coffee brown border */
+    margin-bottom: 15px;
+}
+
+.profile h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #2b1e16;
+}
+
+.profile .bio {
+    font-size: 0.95rem;
+    color: #705e52;
+    margin-bottom: 30px;
+}
+
+/* Links List */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Individual Button Style */
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 16px;
+    background-color: #ffffff;
+    color: #4a3b32;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid #e6dfd5;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+/* Icon placement */
+.link-btn .icon {
+    position: absolute;
+    left: 20px;
+    font-size: 1.2rem;
+}
+
+/* Hover Effect */
+.link-btn:hover {
+    background-color: #6f4e37;
+    color: #ffffff;
+    border-color: #6f4e37;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(111, 78, 55, 0.15);
+}
+
+/* Highlighted/Featured Button (e.g., Volunteer Link) */
+.link-btn.featured {
+    background-color: #8c6239;
+    color: #ffffff;
+    border-color: #8c6239;
+    animation: pulse 2s infinite;
+}
+
+.link-btn.featured:hover {
+    background-color: #593e25;
+    border-color: #593e25;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #a19286;
+}
+
+/* Subtle pulse animation for the volunteer button */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
