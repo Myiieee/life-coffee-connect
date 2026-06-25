@@ -34,7 +34,9 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 8px;
-    color: #2b1e16;
+    color: #6f4e37;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #6f4e37;
 }
 
 .profile .bio {
